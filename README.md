@@ -7,8 +7,20 @@ Built with `OpenCV` and `MSS`. You can start/stop recording with **Space**, and 
 
 ## 1) Examples
 
-
-
+<p align="center">
+  <figure>
+    <img src="examples/webcam_20250916_163848.gif" width="250" alt="Webcam demo">
+    <figcaption align="center">Webcam Recording</figcaption>
+  </figure>
+  <figure>
+    <img src="examples/screen_20250916_163907.gif" width="250" alt="Screen demo">
+    <figcaption align="center">Screen Recording</figcaption>
+  </figure>
+  <figure>
+    <img src="examples/pip_20250916_163826.gif" width="250" alt="PiP demo">
+    <figcaption align="center">PiP Recording</figcaption>
+  </figure>
+</p>
 
 ---
 
@@ -27,17 +39,26 @@ Built with `OpenCV` and `MSS`. You can start/stop recording with **Space**, and 
 ## 3) Installation
 
 ### 3-1) Create Conda environment
+```bash
 conda create -n recorder python=3.10 -y
 conda activate recorder
-
+```
 ### 3-2) Install dependencies
+```bash
 conda install -c conda-forge opencv
 pip install mss
+```
 
 ---
 
-## 4) Control
+## 4) Start ANDControl
 
+### 4-1) Start
+```bash
+python main.py
+```
+
+### 4-2) Control
 - **Space** → Start/stop recording  
 - **ESC** → Exit program  
 - **X button** (close window) → Exit safely
